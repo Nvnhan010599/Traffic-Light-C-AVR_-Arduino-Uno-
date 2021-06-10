@@ -1,0 +1,28 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+rx_buffer0                                                                        0x0300       8
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+rx_wr_index0                                                                      R4           1
+rx_rd_index0                                                                      R3           1
+rx_counter0                                                                       R6           1
+rx_buffer_overflow0                                                               GPIOR0.0  1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+usart_rx_isr                                                                      0x00083     36
+main                                                                              0x000A7    326
+putchar                                                                           0x001ED     10
+put_usart_G100                                                                    0x001F7     13
+_print_G100                                                                       0x00204    308
+printf                                                                            0x00338     37
+strlen                                                                            0x0035D     12
+strlenf                                                                           0x00369     13
